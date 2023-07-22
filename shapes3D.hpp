@@ -17,4 +17,8 @@ class Cube : public Projectable {
     sf::Vector3f origin;
     sf::Vector2f angles;
 
-}
+    virtual sf::VertexArray project(sf::Vector3f origin, sf::Vector2f angles, float pov);
+
+public:
+    Cube(sf::Vector3f origin, float side);
+};
